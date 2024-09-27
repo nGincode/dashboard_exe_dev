@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "logs\\.09833dc8c339696688a4db9da6c44fec1dbd1a23-audit.json",
+    "files": [
+        {
+            "date": 1727093850836,
+            "name": "logs\\2024-09-23.trx.log",
+            "hash": "ac279200d021f6839323c47a09495f2e196c25f0db33e50b732d9fd8232c9bd9"
+        }
+    ],
+    "hashType": "sha256"
+}
