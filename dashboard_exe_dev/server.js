@@ -11,7 +11,7 @@ const hostname = process.env.HOSTNAME || "0.0.0.0";
 let keepAliveTimeout = parseInt(process.env.KEEP_ALIVE_TIMEOUT, 10);
 const nextConfig = {
   env: {
-    APP_API: "http://his.nutech-integrasi.com:7007",
+    APP_API: "https://devbackend-psolrtjabodebek.kai.id",
     SPLIT_IMPORT_SUBMIT: "20000",
   },
   webpack: null,
@@ -41,7 +41,13 @@ const nextConfig = {
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "script-src 'none'; frame-src 'none'; sandbox;",
     contentDispositionType: "inline",
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "devbackend-psolrtjabodebek.kai.id",
+        pathname: "/**",
+      },
+    ],
     unoptimized: false,
   },
   devIndicators: { buildActivity: true, buildActivityPosition: "bottom-right" },
